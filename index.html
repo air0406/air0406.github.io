@@ -1,42 +1,24 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#eaf4ff">
-  <meta name="description" content="Meet Andres Rubio. A personal introduction.">
-  <title>Andres Rubio — Hello!</title>
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#07132c">
+<meta name="description" content="Meet Andres Rubio. Explore a sky of stories, starting with a moon and a rose."><title>Andres Rubio — Among the stars</title><link rel="icon" href="favicon.svg"><link rel="stylesheet" href="style.css"><script src="sky.js" defer></script>
 </head>
 <body>
-  <a class="skip" href="#main">Skip to content</a>
-  <header class="nav wrap">
-    <a class="wordmark" href="#" aria-label="Andres Rubio home">Andres Rubio<span class="brand-dot" aria-hidden="true">.</span></a>
-    <nav aria-label="Main navigation"><a href="#about">About me</a></nav>
-  </header>
-  <main id="main" class="wrap">
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="intro">
-        <p class="eyebrow"><span aria-hidden="true">✧</span> ANDRES RUBIO</p>
-        <h1 id="hero-title">Hi, I’m Andres<span class="hello-dot">.</span><br><span class="soft">Nice to meet you!</span></h1>
-        <p class="hero-copy">Computer Science at Georgia Tech.<br>Class of 2028 · From Mount Vernon, New York.</p>
-        <a class="button" href="#about">Get to know me <span aria-hidden="true">↓</span></a>
-      </div>
-      <div class="hello-art portrait-art">
-        <img class="headshot" src="assets/andres-rubio.jpg" alt="Andres Rubio smiling outdoors" width="4000" height="6000" fetchpriority="high">
-        <span class="spark spark-one" aria-hidden="true">✧</span><span class="spark spark-two" aria-hidden="true">✦</span>
-        <div class="tiny-planet" aria-hidden="true"><span>✦</span></div>
-        <div class="art-caption">✦ &nbsp; · &nbsp; ✧ &nbsp; · &nbsp; ✦</div>
-      </div>
-    </section>
-    <section id="about" class="about" aria-labelledby="about-title">
-      <div class="section-label"><span class="little-star" aria-hidden="true">✧</span><span>INTRODUCTION</span></div>
-      <div class="about-copy"><h2 id="about-title">A bit about me.</h2><p>I’m Andres Rubio, a Computer Science student at Georgia Tech, Class of 2028. My threads are Intelligence and Information.</p><p>I’m from Mount Vernon, New York.</p></div>
-    </section>
-    <section class="quote" aria-label="Personal quote"><span aria-hidden="true">✦</span><blockquote>we only have what we give</blockquote><span aria-hidden="true">✧</span></section>
-  </main>
-  <footer class="wrap"><span>© <span id="year">2026</span> Andres Rubio</span><span>À bientôt <span class="footer-flower" aria-hidden="true">✧</span></span></footer>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-</body>
-</html>
+<canvas id="sky" aria-hidden="true"></canvas><div class="nebula" aria-hidden="true"></div>
+<header><a href="#" id="home">Andres Rubio <span>✧</span></a><button id="motion" aria-pressed="false">Pause motion</button></header>
+<main id="universe">
+<div class="opening"><p class="eyebrow">A MOON. A ROSE. A SKY TO EXPLORE.</p><h1>Every star<br>has a story.</h1><p>Choose a star. Get to know me.</p></div>
+<nav class="constellation" aria-label="Explore Andres’s story">
+<svg class="connections" viewBox="0 0 1000 600" preserveAspectRatio="none" aria-hidden="true"><path d="M190 240 470 100 790 200 660 440 190 240"/></svg>
+<button class="star star-about" data-story="about"><span class="star-light" aria-hidden="true">✦</span><span class="star-label">Hello, I’m Andres<small>01 / INTRODUCTION</small></span></button>
+<button class="star star-school" data-story="school"><span class="star-light" aria-hidden="true">✦</span><span class="star-label">Georgia Tech<small>02 / WHAT I’M LEARNING</small></span></button>
+<button class="star star-home" data-story="hometown"><span class="star-light" aria-hidden="true">✧</span><span class="star-label">Where I’m from<small>03 / MY ROOTS</small></span></button>
+<button class="star star-quote" data-story="quote"><span class="star-light" aria-hidden="true">✦</span><span class="star-label">Something I believe<small>04 / A FEW WORDS</small></span></button>
+</nav>
+<div class="moon-scene"><div class="moon" aria-hidden="true"><i></i><i></i><i></i><i></i></div><button class="rose" data-story="quote" aria-label="Discover the rose’s quote"><svg viewBox="0 0 150 230" aria-hidden="true"><defs><linearGradient id="glass" x2="1" y2="1"><stop stop-color="#c5e9ff" stop-opacity=".2"/><stop offset="1" stop-color="#c5e9ff" stop-opacity=".01"/></linearGradient></defs><path d="M25 196V79a50 50 0 0 1 100 0v117" fill="url(#glass)" stroke="#a6d6f4" stroke-opacity=".45"/><path d="M35 82a40 40 0 0 1 23-36" fill="none" stroke="#e5f5ff" stroke-opacity=".55" stroke-linecap="round" stroke-width="3"/><ellipse cx="75" cy="198" rx="59" ry="9" fill="#455e78"/><ellipse cx="75" cy="194" rx="56" ry="6" fill="#abc4d6"/><path d="M77 186q-8-44 0-77" stroke="#79a286" fill="none" stroke-width="4"/><path d="M75 155q-27 1-31-20 25-5 31 20M76 141q25-1 31-23-27 1-31 23" fill="#63997c"/><g class="bloom"><path d="M76 116q-40-13-31-39 18-9 31 0 20-12 33 2 7 25-33 37" fill="#d16b86"/><path d="M76 110Q50 88 60 68q19-4 26 10 15-7 18 5-5 22-28 27" fill="#f092a0"/><path d="M73 97Q60 78 75 75q18 1 12 16" fill="none" stroke="#a63e67" stroke-width="5" stroke-linecap="round"/></g></svg><span>The rose <span aria-hidden="true">↗</span></span></button><div class="moon-caption"><span class="location-dot"></span> YOU ARE HERE <span class="coordinates">00° / THE BEGINNING</span></div></div>
+<div class="explore-hint"><span aria-hidden="true">✧</span> Follow your curiosity <span id="progress">0 / 4 stars explored</span></div>
+</main>
+<dialog id="story"><button class="close" aria-label="Close story">✕</button><div id="story-content"></div><button class="next">Next star <span aria-hidden="true">↗</span></button></dialog>
+<noscript><section class="fallback"><h2>Hi, I’m Andres Rubio.</h2><p>Georgia Tech Class of 2028. Computer Science with threads in Intelligence and Information. From Mount Vernon, New York.</p><p>“we only have what we give”</p><p>Enable JavaScript to explore the stars.</p></section></noscript>
+</body></html>
